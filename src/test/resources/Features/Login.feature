@@ -17,7 +17,7 @@ Feature: Login
   Scenario: Login with invalid credentials
     When I enter "tomandjerry" as username
     And I enter "SuperSecretPassword!" as password
-    When I click on login button
+    And I click on login button
     Then I should see error message about "username"
     And I close error message
     When I enter "tomsmith" as username
